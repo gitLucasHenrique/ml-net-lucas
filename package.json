@@ -1,0 +1,14 @@
+{
+  "name": "ml-net-lucas",
+  "version": "1.0.0",
+  "description": "trabalho usando ml.net",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lucas henrique ronqui de souza",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+		<title>ML Feedback Analisys</title>
+		<meta name="description" content="Open-Source app, built on top of Bulma CSS and coded in JAMstack pattern.">
+		<meta name="keywords" content="support@appseed.us">
+
+        <link rel="icon" type="image/png" href="img/favicon.png" />
+
+        <!--Core CSS -->
+        <link rel="stylesheet" href="css/bulma.css">
+        <link rel="stylesheet" type="text/css" href="css/core.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+        <!--Libraries-->
+        <link rel="stylesheet" type="text/css" href="css/icons.css">
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/confetti.js"></script>
+    </head>
+    <body>
+        <div id="preloader">
+            <div id="status"></div>
+        </div>        
+        <section class="hero is-fullheight is-default is-bold">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns is-vcentered">
+                        <div class="column is-5 is-offset-1 landing-caption">
+                            <p id="circle-p">
+
+                                    <span class="light-gray">
+                                            Using <a target="_blank" href="https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet"> Microsoft.ML</a> as a feedback analyzer
+                                        </span>
+                                        <span class="title is-1 is-bold is-spaced light-gray">
+                                                Sentiment Analysis 
+                                        </span>
+                                        <br>
+                                        <span class="subtitle is-muted">
+                                                We'll take your feedback, 
+                                                <span class="subtitle is-muted has-text-weight-bold has-text-grey-lighter">
+                                                        even if it's a mean one
+                                                </span>
+                                                
+                                        </span>
+                                        <br>
+                                        <br>
+                                        <span class="subtitle is-muted">
+                                                <input id="feedback" class="input is-medium" type="text" placeholder="Type your feedback">
+                                            </span>
+                                            <br>
+                                            <br>
+                                            <a id="a-submit" href="" class="button cta rounded is-success primary-btn raised">
+                                                    Send
+                                                </a>
+                                            </p>  
+                                            
+                        </div>
+                        
+                        <div class="column is-3 is-offset-1">
+                            <figure class="image">
+                                <img  class="lazy"
+                                      src=""
+                                      data-src=""
+                                      id="imagem">
+                            </figure>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        <script src="js/bundle.js"></script>
+        
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script src="js/new.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/check.js"></script>
+        <canvas id="confetti" width="1" height="1" hidden></canvas>
+    </body>  
+</html>
