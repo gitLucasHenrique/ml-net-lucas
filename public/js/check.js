@@ -1,16 +1,19 @@
 (function() {
-    $(document).ready(function(event){
+    $(document).ready(function(){
+        let feedback = document.getElementById("feedback");
+        let img = document.getElementById("imagem");
+        let confetti = document.getElementById("confetti");
+        let buttonSend = document.getElementById("a-submit");
         $("#a-submit").click(function(event){
-            let feedback = document.getElementById("feedback");
-            let img = document.getElementById("imagem");
-            let confetti = document.getElementById("confetti");
-            let buttonSend = this;
             event.preventDefault();
             checkFeedback(feedback, img, confetti, buttonSend);
         });
-        if (event.which == 13 || event.keyCode == 13){
-            checkFeedback(feedback, img, confetti, buttonSend);
-        }
+        $('#feedback').keypress(function(event){
+            var keycode = (event.keyCode ? event.keyCode : event.which);
+            if(keycode == '13'){
+                checkFeedback(feedback, img, confetti, buttonSend);
+            }
+        });
       });
  })();
 
