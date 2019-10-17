@@ -13,7 +13,9 @@
 
 function checkFeedback(feedback, img, confetti, buttonSend){
     let sentence = feedback.value;
-    fetch("//localhost/checkAnswer?sentence="+sentence, { method: "POST" })
+    
+    fetch("//ml-net.herokuapp.com/checkAnswer?sentence="+sentence, { method: "POST" })
+    //fetch("//localhost/checkAnswer?sentence="+sentence, { method: "POST" }) //localhost
     .then(response => response.json())
     .then(result => {
         console.log(result);
