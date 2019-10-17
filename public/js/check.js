@@ -1,5 +1,5 @@
 (function() {
-    $(document).ready(function(){
+    $(document).ready(function(event){
         $("#a-submit").click(function(event){
             let feedback = document.getElementById("feedback");
             let img = document.getElementById("imagem");
@@ -8,6 +8,9 @@
             event.preventDefault();
             checkFeedback(feedback, img, confetti, buttonSend);
         });
+        if (event.which == 13 || event.keyCode == 13){
+            checkFeedback(feedback, img, confetti, buttonSend);
+        }
       });
  })();
 
