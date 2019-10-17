@@ -12,7 +12,8 @@
  })();
 
 function checkFeedback(feedback, img, confetti, buttonSend){
-    fetch("http://localhost:3000/")
+    let sentence = feedback.value;
+    fetch("//localhost/checkAnswer?sentence="+sentence, { method: "POST" })
     .then(response => response.json())
     .then(result => {
         console.log(result);
